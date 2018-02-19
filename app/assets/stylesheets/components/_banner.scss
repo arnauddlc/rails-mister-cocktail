@@ -1,0 +1,14 @@
+.banner {
+	margin:0;
+	align-content: center;
+	background-image: linear-gradient(-225deg, rgba(234, 123, 123, 0.6) 0%, rgba(15, 16, 16, 0.6) 50%), url(https://images.alphacoders.com/548/548027.jpg);
+	background-size: cover;
+	width: 100%;
+	height:450px;
+	color: white;
+	display: flex;
+
+	h1 {
+		margin: auto;
+	}
+}

@@ -1,13 +1,22 @@
-<h1>All my cocktails index</h1>
-<ul>
+<div class="banner text-center">
+	<h1>All my cocktails index</h1>
+</div>
+
+<div class="container">
+
+	<div class="row">
 	<% @cocktails.each do |cocktail| %>
-	<li>
-		<h3><%= cocktail.name %></h3>
-		<ul> <% cocktail.doses.each do |dose| %>
-			<li><p><%= "#{dose.ingredient.name} -- #{dose.description}" %></p></li>
-			<% end %>
-		</ul>
-	</li>
+		<div class="col-xs-1 col-sm-6 col-md-3">
+			<div class="card">
+				<h3><%= cocktail.name %></h3>
+				<%= link_to "more details", cocktail_path(cocktail) %>
+				<ul> <% cocktail.doses.each do |dose| %>
+					<li><p><%= "#{dose.ingredient.name} -- #{dose.description}" %></p></li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
 	<% end %>
-</ul>
-<%= link_to "Add a new cocktail", cocktails_new_path %>
+	</div>
+</div>
+<%= link_to "Add a new cocktail", new_cocktail_path %>

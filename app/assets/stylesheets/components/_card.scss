@@ -1,11 +1,56 @@
 .card {
+	position: relative;
 	display: flex;
-	padding: 20px;
+	padding: 15px;
 	margin: 20px;
 	height: 200px;
-	background-color: gray;
-	color: black;
-	border: 1px solid black;
+	background-color: #D6D6D6;
+	color: white;
+	text-shadow: 2px 2px gray;
+	border: 1px solid #c0c0c0;
 	border-radius: 3px;
 	box-shadow: 2px 2px 4px rgba(200, 200, 200, 0.6);
+	justify-content: center;
+	align-content: center;
+
+	h3 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 64px;
+	}
+}
+
+
+.card-details{
+	position: absolute;
+	text-shadow: none;
+	top: 0;
+	bottom: 0;
+	left:0 ;
+	right: 0;
+	margin: 0;
+	z-index: 2;
+	padding: 15px;
+	opacity: 0;
+	transition: all 0.3s ease;
+	overflow: scroll;
+
+	&:hover {
+		padding: 15px;
+		display: block;
+		background-color: white;
+		opacity: 0.8;
+		color: black;
+	}
+
+	p {
+		text-align: center;
+	}
+
+}
+
+#add_cocktail {
+	display: block;
 }

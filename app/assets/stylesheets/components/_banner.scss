@@ -1,14 +1,28 @@
 .banner {
+	font-family: $body-font;
 	margin:0;
 	align-content: center;
-	background-image: linear-gradient(-225deg, rgba(234, 123, 123, 0.6) 0%, rgba(15, 16, 16, 0.6) 50%), url(https://images.alphacoders.com/548/548027.jpg);
+	background-image: linear-gradient(-225deg, rgba(234, 123, 123, 0.9) 0%, rgba(15, 16, 16, 0.6) 55%), url(chihuahua_banner3.jpg);
 	background-size: cover;
+	background-position: center;
 	width: 100%;
-	height:450px;
+	height:550px;
 	color: white;
 	display: flex;
 
 	h1 {
 		margin: auto;
+		font-size: 72px;
+		font-weight: bolder;
+		text-shadow: 3px 3px gray;
+	}
+}
+
+#senor {
+	display: flex;
+
+	h1{
+		padding: 25px;
+		margin: auto 0;
 	}
 }

@@ -67,7 +67,7 @@
 #add_cocktail {
 	color: #7A221C;
 	display: flex;
-	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(chihuahua_small1.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), asset-url('chihuahua_small1.jpg');
 	background-size: cover;
 	text-shadow: 1px 1px 3px #EBEBEB;
 	align-items: center;

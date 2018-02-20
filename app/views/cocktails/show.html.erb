@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="wrap-info">
 		<div class="cocktail-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
-         url('<%= image_path @cocktail.photo.url, height: 120, crop: :fill %>')">
+         url('<%= image_path @cocktail.photo.url(:cover),:width=>800, :height=>320, :crop=>"fill" %>')">
 			<h1><%= @cocktail.name %></h1>
 		</div>
 		<p>Here is Señor Cocktail's recipe:</p>

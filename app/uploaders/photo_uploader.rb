@@ -5,6 +5,6 @@ class PhotoUploader < CarrierWave::Uploader::Base
   process convert: 'jpg'
 
   version :thumnail do
-    resize_to_fit 200, 200
+    resize_to_fit 280, 280
   end
 end

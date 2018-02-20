@@ -18,7 +18,7 @@
 	<% @cocktails.each do |cocktail| %>
 		<div class="col-xs-12 col-sm-6 col-md-4">
 			<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
-         url('<%= image_path cocktail.photo.url, height: 200, crop: :cover %>')">
+         url('<%= image_path cocktail.photo.url(:thumnail), :width=>280, :height=>280, :crop=>"fill" ; %>')">
 				<h3><%= cocktail.name %></h3>
 				 <%= link_to cocktail_path(cocktail) do %>
 					<div class="card-details">

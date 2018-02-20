@@ -1,4 +1,5 @@
 .card {
+	background-size: cover;
 	font-family: $body-font;
 	position: relative;
 	display: flex;
@@ -20,13 +21,6 @@
 		top: 40px;
 		left: 40px;
 		font-size: 32px;
-	}
-
-	h2 {
-		font-size: 64px;
-		position: absolute;
-		bottom: 40px;
-		margin: 0 auto;
 	}
 }
 
@@ -76,11 +70,13 @@
 	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(chihuahua_small1.jpg);
 	background-size: cover;
 	text-shadow: 1px 1px 3px #EBEBEB;
-
+	align-items: center;
 
 	h2 {
-		bottom: 40px;
-		left: 40px;
+		position: absolute;
+		font-size: 64px;
+		margin: auto 0;
+		left: 30px;
 	}
 
 }

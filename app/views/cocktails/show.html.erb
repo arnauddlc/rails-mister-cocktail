@@ -1,9 +1,19 @@
-<h1><%= @cocktail.name %></h1>
-<ul> <% @cocktail.doses.each do |dose| %>
-	<li><p><%= "#{dose.ingredient.name} -- #{dose.description}" %></p>
-		<%= link_to "delete dose", dose_path(dose), method: :delete %>
-	</li>
-	<% end %>
-</ul>
-<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail)  %>
-<%= link_to "Return to my cocktails", cocktails_path  %>
+<div class="container">
+	<div class="wrap-info">
+		<div class="cocktail-photo" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
+         url('<%= image_path @cocktail.photo.url, height: 120, crop: :fill %>')">
+			<h1><%= @cocktail.name %></h1>
+		</div>
+		<p>Here is Señor Cocktail's recipe:</p>
+			<ul class="dose-list"> <% @cocktail.doses.each do |dose| %>
+				<li><p><i class="fas fa-glass-martini"></i><%= " #{dose.ingredient.name} - #{dose.description}" %>
+					<%= link_to dose_path(dose), method: :delete do %> | <i class="far fa-trash-alt"></i></p>
+					<% end %>
+				</li>
+				<% end %>
+			</ul>
+			<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail)  %>   |   
+			<%= link_to "Return to my cocktails", cocktails_path  %>
+
+	</div>
+</div>

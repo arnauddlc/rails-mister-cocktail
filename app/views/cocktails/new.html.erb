@@ -1,7 +1,17 @@
-<h1>Create a new cocktail</h1>
-<h2>Create your own new cocktail!</h2>
+<div class="container">
+	<div class="wrap-info">
 
-<%= simple_form_for @cocktail do |f| %>
-	<%= f.input :name %>
-	<%= f.submit %>
-<% end %>
+		<h1>Create a new cocktail</h1>
+
+		<%= simple_form_for @cocktail do |f| %>
+			<%= f.input :name %>
+			<%= f.input :photo %>
+		  <%= f.input :photo_cache, as: :hidden %>
+		  <br>
+			<%= f.submit html: { class: "button-pers" } %>
+		<% end %>
+		<br>
+
+		<%= link_to "Return to main page", cocktails_path %>
+	</div>
+</div>

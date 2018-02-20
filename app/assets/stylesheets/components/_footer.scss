@@ -1,0 +1,18 @@
+.footer {
+	display: block;
+	padding: 20px;
+	margin-top: 30px;
+	background-image: linear-gradient(188deg, rgba(234, 123, 123, 0.9) 5%, rgba(15, 16, 16, 0.35) 49%), url(sign_in.jpg);
+	height: 500px;
+	background-position: center;
+
+	p {
+		font-size: 24px;
+		font-weight: lighter;
+		padding: 5px;
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+}

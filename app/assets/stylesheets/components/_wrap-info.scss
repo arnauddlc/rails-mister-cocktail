@@ -1,0 +1,34 @@
+.wrap-info {
+	margin: 40px 5px;
+	padding: 75px;
+	display: block;
+	width: 100%;
+	background-color: rgba(125, 125, 125, 0.3);
+	border: 1px solid rgba(125, 125, 125, 0.3);
+	color: white;
+	border-radius: 3px;
+
+	h1 {
+		text-shadow: 1px 1px 3px white;
+	}
+
+	p {
+		margin-top: 25px;
+		font-weight: 32px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	label {
+		padding: 15px;
+		font-size: 24px;
+	}
+
+	select, input {
+		padding: 5px;
+		font-size: 24px;
+		color: black;
+	}
+}

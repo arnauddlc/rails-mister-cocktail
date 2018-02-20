@@ -1,6 +1,14 @@
 <div class="banner">
 	<div class="container text-left" id="senor">
 		<h1>Señor Cocktail</h1>
+		<div>
+			<h3><span id="banner-typed-text"></span></h3>
+		</div>
+	<!-- 	<div id="typed-strings">
+    <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+    <p>It <em>types</em> out sentences.</p>
+	</div>
+	<span id="typed"></span> -->
 	</div>
 </div>
 
@@ -9,7 +17,8 @@
 	<div class="row">
 	<% @cocktails.each do |cocktail| %>
 		<div class="col-xs-12 col-sm-6 col-md-4">
-			<div class="card">
+			<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
+         url('<%= image_path cocktail.photo.url, height: 200, crop: :cover %>')">
 				<h3><%= cocktail.name %></h3>
 				 <%= link_to cocktail_path(cocktail) do %>
 					<div class="card-details">
@@ -35,4 +44,13 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div class="footer text-center">
+	<p>Follow the mob:</p>
+	<ul class="list-inline">
+		<li><%= link_to "https://github.com/arnauddlc/" do %><i class="fab fa-github"></i><% end %></li>
+		<li><i class="fas fa-paw"></i></li>
+		<li><%= link_to "https://www.linkedin.com/in/arnauddelachaise/" do %><i class="fab fa-linkedin-in"></i><% end %></li>
+	</ul>
+
 </div>

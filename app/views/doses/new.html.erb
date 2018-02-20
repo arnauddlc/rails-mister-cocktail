@@ -1,10 +1,16 @@
-<h1>Create a new cocktail</h1>
-<h2>Create your own new cocktail!</h2>
+<div class="container">
+	<div class="wrap-info">
 
-<%= simple_form_for([@cocktail, @dose]) do |f| %>
-	<%= f.association :ingredient %>
-	<%= f.input :description %>
-	<%= f.submit %>
-<% end %>
+		<h1>Add a dose to <%= @cocktail.name %></h1>
 
-<%= link_to "Return to cocktail view", cocktail_path(@cocktail) %>
+		<%= simple_form_for ([@cocktail, @dose]) do |f| %>
+			<%= f.association :ingredient %>
+			<%= f.input :description %>
+		  <br>
+			<%= f.submit html: { class: "button-pers" } %>
+		<% end %>
+		<br>
+
+		<%= link_to "Return to cocktail view", cocktail_path(@cocktail) %>
+	</div>
+</div>

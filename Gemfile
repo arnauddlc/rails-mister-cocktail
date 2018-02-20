@@ -34,7 +34,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'yui-compressor'
 #Le Wagon recommended gems
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass' # Bootstrap v3
